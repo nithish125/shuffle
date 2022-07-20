@@ -1,0 +1,78 @@
+
+.circle{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: green;
+    transform: rotate(var(--rotation));
+}
+.circle2{
+
+    display: flex;
+    justify-content: center;
+}
+.circle #nm1{
+    width: 100%;
+    height: 100%;
+    --rotation: 0deg;
+    color: yellow;
+    position: absolute;
+    text-align: center;
+    position: absolute;
+    font-size: 30px;
+    transform: rotate(var(--rotation));
+
+}
+.circle #nm2{
+    width: 100%;
+    height: 100%;
+    --rotation: 72deg;
+    text-align: center;
+    position: absolute;
+    color: yellow;
+    font-size: 30px;
+    position: absolute;
+    transform: rotate(var(--rotation));
+}
+.circle #nm3{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    --rotation: 144deg;
+    text-align: center;
+    position: absolute;
+    color: yellow;
+    position: absolute;
+    font-size: 30px;
+    transform: rotate(var(--rotation));
+}
+.circle #nm4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    --rotation: 216deg;
+    transform: rotate(var(--rotation));
+    text-align: center;
+    color: yellow;
+    position: absolute;
+    font-size: 30px;
+}
+.circle #nm5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    --rotation: 288deg;
+    text-align: center;
+    color: yellow;
+    position: absolute;
+    font-size: 30px;
+    transform: rotate(var(--rotation))
+}
+.circle #sf{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    transform: translate(-50%, -50%);
+}

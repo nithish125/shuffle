@@ -10,18 +10,48 @@ r=["A","I","R","F","Y"]
 function sufle(){
     var a=Math.floor((Math.random())*(r.length))
     var s=Math.floor((Math.random())*(r.length))
+    var b=Math.floor((Math.random())*(r.length))
+    var c=Math.floor((Math.random())*(r.length))
+    var d=Math.floor((Math.random())*(r.length))
+   // var previous=a
     
-    nm1.innerText=r[s] ;
     
-    if(s==a){
-        var a=Math.floor((Math.random())*(r.length))
-    sufle()
-    }
-    else{
-     nm2.innerText=r[a];
-    }
+    
+        
+    function toFindDuplicates() {
+        let arry = [200,100,210,230,20];
+        let resultToReturn = false;
+        // call some function with callback function as argument
+        resultToReturn = arry.some((element, index) => {
+            return arry.indexOf(element) !== index
+        });
+        if (resultToReturn) {
+            while(resultToReturn = false){
+            console.log('Duplicate elements exist');
+             a=Math.floor((Math.random())*(r.length))
+             s=Math.floor((Math.random())*(r.length))
+             b=Math.floor((Math.random())*(r.length))
+             c=Math.floor((Math.random())*(r.length))
+             d=Math.floor((Math.random())*(r.length))
+            }
+            }
+            else {
+                nm1.innerText=r[a];
+                nm2.innerText=r[s];
+                nm3.innerText=r[b];
+                nm4.innerText=r[c];
+                nm5.innerText=r[d];
+                
+                }
+            }
+    
+            toFindDuplicates()
+    
+
 
     // nm3.style.setProperty("color",r[s] );
-    console.log(sf)
-    console.log(Math.floor(Math.random()))
+    console.log(s)
+    //console.log(Math.floor(Math.random()*4))
 }
+
+

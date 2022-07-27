@@ -7,6 +7,7 @@ function load(){
   var d=document.querySelector(".num")
   var sub=document.querySelector("input")
   var balance=document.querySelector("span")
+  var ba=document.querySelector("body")
   console.log(sub)
   var emp=["KING","INK","IN","NGK","NI","NG"]
   emp.length--
@@ -28,7 +29,10 @@ function load(){
   sub.addEventListener("click",add)
   function add(){
     var c=emp.includes(d.innerHTML)
-
+    if(emp.length==1){
+      ba.innerHTML="comple"
+      console.log("hi")
+    }
    // console.log(emp.includes(d.innerHTML))
     if(c==true){
        
@@ -46,6 +50,7 @@ if(con==false){
     }
     d.innerHTML='';
   }
+  
 }
 
     

@@ -6,9 +6,11 @@ function load(){
   var len=0
   var d=document.querySelector(".num")
   var sub=document.querySelector("input")
-  var balance=document.querySelector(".balance")
+  var balance=document.querySelector("span")
   console.log(sub)
-  var emp=["KING","INK","IN","GIN","KIG","GK"]
+  var emp=["KING","INK","IN","NGK","NI","NG"]
+  emp.length--
+  var checking=[]
   b.forEach((a)=>{
       let ran=Math.floor(Math.random()*y.length);
       a.innerHTML=y[ran];
@@ -26,11 +28,21 @@ function load(){
   sub.addEventListener("click",add)
   function add(){
     var c=emp.includes(d.innerHTML)
-    console.log(emp.includes(d.innerHTML))
+
+   // console.log(emp.includes(d.innerHTML))
     if(c==true){
        
-     balance.innerHTML= emp.length-- 
+      
       console.log(emp.length)
+      
+      console.log(checking)
+     var con= checking.includes(d.innerHTML)
+     
+if(con==false){
+  checking.push(d.innerHTML)
+  console.log(con)
+      balance.innerHTML= emp.length--
+}
     }
     d.innerHTML='';
   }

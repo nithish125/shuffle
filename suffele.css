@@ -51,6 +51,9 @@ body{
     position: absolute;
 
 }
+p{
+    margin: 300px -5px 0 -147px;
+}
 .con{
     position: relative;
     margin: 233px -45px 0 -195px;

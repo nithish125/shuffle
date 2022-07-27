@@ -16,8 +16,8 @@ function sufle() {
         r.splice(num,1)  
         console.log(b)
         console.log (r[0])
-        //console.log( rr[num])
+        console.log( rr[num])
     })
-}
+  }
     
 

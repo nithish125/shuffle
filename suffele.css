@@ -44,3 +44,18 @@ body{
     font-size: 20px;
     transform: translate(-50%, -50%);
 }
+.num{
+    width: 150px;
+    height: 15px;
+    border: 2px solid;
+    position: absolute;
+
+}
+.con{
+    position: relative;
+    margin: 233px -45px 0 -195px;
+}
+input{
+    position: absolute;
+    margin: 0 15px 0 155px;
+}

@@ -9,7 +9,7 @@ function load(){
   var balance=document.querySelector("span")
   var ba=document.querySelector("body")
   console.log(sub)
-  var emp=["KING","INK","IN","NGK","NI","NG"]
+  var emp=["KING","INK","IN"]
   emp.length--
   var checking=[]
   b.forEach((a)=>{
@@ -18,18 +18,19 @@ function load(){
       y.splice(ran,1);
       
       a.addEventListener("click",vl)
-      function vl(){
-        var s=this.innerHTML;
-         d.append(s)
-        console.log(d.innerHTML);
-        
-      }
+      
      
   })
+  function vl(){
+    var s=this.innerHTML;
+     d.append(s)
+    console.log(d.innerHTML);
+    
+  }
   sub.addEventListener("click",add)
   function add(){
     var c=emp.includes(d.innerHTML)
-    if(emp.length==1){
+    if(emp.length==0){
       ba.innerHTML="comple"
       console.log("hi")
     }
@@ -53,5 +54,5 @@ if(con==false){
   
 }
 
-    
+    load()
 

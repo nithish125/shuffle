@@ -2,13 +2,13 @@ function load(){
   let b=document.querySelectorAll('#niuk');
   let x="NIGK";
   let y=x.split('');
-  console.log(y);
+  //console.log(y);
   var len=0
   var d=document.querySelector(".num")
   var sub=document.querySelector("input")
   var balance=document.querySelector("span")
   var ba=document.querySelector("body")
-  console.log(sub)
+  //console.log(sub)
   var emp=["KING","INK","IN"]
   emp.length--
   var checking=[]
@@ -16,16 +16,13 @@ function load(){
       let ran=Math.floor(Math.random()*y.length);
       a.innerHTML=y[ran];
       y.splice(ran,1);
-      
-      a.addEventListener("click",vl)
-      
-     
+       console.log(a)
+      a.addEventListener("click",vl)  
   })
   function vl(){
     var s=this.innerHTML;
      d.append(s)
-    console.log(d.innerHTML);
-    
+    //console.log(d.innerHTML);
   }
   sub.addEventListener("click",add)
   function add(){
@@ -38,9 +35,9 @@ function load(){
     if(c==true){
        
       
-      console.log(emp.length)
+      //console.log(emp.length)
       
-      console.log(checking)
+      //console.log(checking)
      var con= checking.includes(d.innerHTML)
      
 if(con==false){
